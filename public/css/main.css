@@ -1,0 +1,199 @@
+    /* navibalk*/
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+li.nav {
+  float: left;
+}
+
+li.nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+li.nav a:hover {
+  background-color: #E3B1E9;
+}
+    /* active link menu*/
+.active {
+    background-color: greenyellow;
+}
+    .active{
+        background-color: #E3B1E9;
+    }
+
+    /* navibar dropdown*/
+ul.navi {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: black;
+}
+
+li.navi {
+  float: left;
+}
+
+li.navi, .dropbt {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+}
+
+li.navi a:hover, dropdown:hover .dropbt {
+  background-color: #E3B1E9;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E3B1E9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 3;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #E3B1E9;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+    /* pink text brorder*/
+  .pink {
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    border: 1px solid black;
+    display: inline-block;
+    border-radius: 12px;
+    background-color: rgb(244,214,224);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 80px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: Vladimir Script;
+    font-size: 30px;
+  }
+
+
+    /*vierkant om tekst*/
+.textborder {
+  background-color: white;
+  width: 500px;
+  border: 1px solid white;;
+  margin-top: 20px;
+  margin-left: 50px;
+
+}
+
+    /* header bloem foto*/
+
+  .header {
+    background-image: url('../img/bloemroze.JPG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 210px;
+    padding-bottom: 210px;
+    z-index: 1;
+  }
+
+    /* grid rechts*/
+    .grid {
+        grid-area: right;
+    }
+
+    .grid-container {
+        display: grid;
+        position: absolute;
+        top: 600px;
+        right: 16px;
+        left: 810px;
+        grid-gap: 16px;
+        background-color: white;
+        padding: 20px;
+        background-color: transparent;
+        text-align: justify;
+        padding: 20px 0;
+        font-size: 15px;
+    }
+    .text {
+        text-align: right;
+    }
+    /* block characteristics*/
+    .block {
+        padding-top: -20px;
+        padding-block: 5px;
+        padding-bottom: 0px;
+        border: 1px solid black;
+        display: inline-block;
+        border-radius: 12px;
+        background-color: rgb(244,214,224);
+        font-size: 20px;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 10px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        font-family: Vladimir Script;
+        font-size: 30px;
+    }
+
+    /*border om links dashboard*/
+    .tb {
+        border-left: 10px solid #E3B1E9;
+        background-color: whitesmoke;
+    }
+
+  /*border around links in motivation*/
+    .link {
+        border-left: 10px solid #E3B1E9;
+    }
+
+    .is-danger {
+        color: red;
+    }
+
+    .help {
+        display: block;
+    }
+    .button {
+        border: none;
+        text-color: white;
+        padding: 10px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    .button1 {
+        background-color: rgb(244,214,224);
+    }
