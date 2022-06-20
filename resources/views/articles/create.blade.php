@@ -79,6 +79,10 @@
                     * This field is required.
                 </p>
 
+                <div class="">
+                    <a class="button is-focused" href="/articles">Cancel</a>
+                </div>
+
             </form>
         </div>
     </div>
