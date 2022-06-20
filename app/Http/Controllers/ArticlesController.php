@@ -11,9 +11,9 @@ class ArticlesController extends Controller
     {
 
         // Render a list of a resource
-        $articles = Article::latest()->get();
+        $article = Article::latest()->get();
 
-        return view('articles.index', ['articles' => $articles]);
+        return view('articles.index', ['article' => $article]);
     }
 
     public function show(Article $article)

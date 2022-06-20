@@ -52,7 +52,7 @@ class FAQController
 
     }
 
-    public function update(Faq $faq, Request $request)
+    public function update(Faq $faq)
     {
         // Persist the edited resource
         $faq->update($this->validateFaq());

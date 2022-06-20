@@ -22,6 +22,25 @@
             <li class="nav"><a href="/profession" class="{{ Request::path() === 'profession' ? 'active' : '' }}">Profession</a></li>
             <li class="nav"><a href="/articles" class="{{ Request::path() ==='articles' ? 'active' : '' }}">Articles</a></li>
             <li class="nav"><a href="/faq" class="{{ Request::path() === 'faq' ? 'active' : '' }}">FAQ</a></li>
+            <li class="nav">
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                        <div>{{ Auth::user()->name }}</div>
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <form method="POST" action="{{ route('logout') }}">
+                            @csrf
+
+                            <a :href="route('logout')" onclick="event.preventDefault();
+                                                this.closest('form').submit();">
+                                {{ __('Log out') }}
+                            </a>
+                        </form>
+                    </div>
+                </div>
+
+            </li>
         </ul>
     </div>
 

@@ -1,10 +1,15 @@
-@extends('layout')
+@extends ('formLayout')
 
+@section ('content')
 
-@section('content')
+    <div class="content">
+        <section class="section">
+            <h1>{{$article->title}}</h1>
 
-<h1>Article</h1>
-<h2>{{$article->title}}</h2>
-<p>{{$article->body}}</p>
+            <h4>{{$article->excerpt}}</h4>
+
+            <p>{{$article->body}}</p>
+        </section>
+    </div>
 
 @endsection

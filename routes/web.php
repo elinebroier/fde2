@@ -27,31 +27,38 @@ use App\Http\Controllers\GradeController;
 
 Route::get('/posts/{post}',  [PostsController::class, 'show']);
 
-Route::get('/', [WelcomeController::class, 'show']);
+Route::get('/', [WelcomeController::class, 'show'])->middleware(['auth']);
 Route::get('/articles', function() {
     return view('articles', [
         'articles' => App\Models\Article::take(3)->latest()->get()
-    ]);
+    ])->middleware(['auth']);
 });
 
 
-Route::get('/profile', [ProfileController::class, 'show']);
-Route::get('/photos', [PhotosController::class, 'show']);
-Route::get('/hbo', [HBOController::class, 'show']);
-Route::get('/grades', [GradeController::class, 'show']);
-Route::get('/faq', [FAQController::class, 'show']);
-Route::get('/motivation', [MotivationController::class, 'show']);
-Route::get('/profession', [ProfessionController::class, 'show']);
+Route::get('/profile', [ProfileController::class, 'show'])->middleware(['auth']);
+Route::get('/photos', [PhotosController::class, 'show'])->middleware(['auth']);
+Route::get('/hbo', [HBOController::class, 'show'])->middleware(['auth']);
+Route::get('/grades', [GradeController::class, 'show'])->middleware(['auth']);
+
+Route::get('/motivation', [MotivationController::class, 'show'])->middleware(['auth']);
+Route::get('/profession', [ProfessionController::class, 'show'])->middleware(['auth']);
 
 //Route Articles
-Route::resource('/articles', ArticlesController::class);
+Route::resource('/articles', ArticlesController::class)->middleware(['auth']);
 
 // Route FAQ
-Route::resource('/faq', FAQController::class);
+Route::resource('/faq', FAQController::class)->middleware(['auth']);
 
 // Route Grade
-Route::resource('/grades', GradeController::class);
+Route::resource('/grades', GradeController::class)->middleware(['auth']);
 
-Route::resource('/course', CourseController::class);
+Route::resource('/course', CourseController::class)->middleware(['auth']);
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+
 
 
