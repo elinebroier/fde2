@@ -39,9 +39,11 @@ Route::get('/profile', [ProfileController::class, 'show'])->middleware(['auth'])
 Route::get('/photos', [PhotosController::class, 'show'])->middleware(['auth']);
 Route::get('/hbo', [HBOController::class, 'show'])->middleware(['auth']);
 Route::get('/grades', [GradeController::class, 'show'])->middleware(['auth']);
-
 Route::get('/motivation', [MotivationController::class, 'show'])->middleware(['auth']);
 Route::get('/profession', [ProfessionController::class, 'show'])->middleware(['auth']);
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth']);
 
 //Route Articles
 Route::resource('/articles', ArticlesController::class)->middleware(['auth']);
@@ -54,9 +56,9 @@ Route::resource('/grades', GradeController::class)->middleware(['auth']);
 
 Route::resource('/course', CourseController::class)->middleware(['auth']);
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+//Route::get('/dashboard', function () {
+//    return view('dashboard');
+//})->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
 
