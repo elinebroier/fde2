@@ -197,3 +197,8 @@ li.dropdown {
     .button1 {
         background-color: rgb(244,214,224);
     }
+
+    .error{
+        padding-left:425px;
+        padding-top:150px;
+    }
