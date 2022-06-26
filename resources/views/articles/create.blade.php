@@ -75,9 +75,9 @@
                     </div>
                 </div>
                 <br>
-                <p class="help is-danger is-large">
-                    * This field is required.
-                </p>
+{{--                <p class="help is-danger is-large">--}}
+{{--                    * This field is required.--}}
+{{--                </p>--}}
 
                 <div class="">
                     <a class="button is-focused" href="/articles">Cancel</a>
