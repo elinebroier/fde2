@@ -1,11 +1,4 @@
-{{--@extends('layout')--}}
-
-{{--@section('content')--}}
-
-{{--    <h1>Hallo dit is 500</h1>--}}
-
-{{--@endsection--}}
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 
@@ -32,10 +25,7 @@
 
 <body class="body500">
 
-{{--<div class="error">--}}
-{{--    <h1><b style="color: red">500: </b>something went wrong</h1>--}}
-{{--</div>--}}
-
+<img src="{{url('../img/500error.jpg')}}">
 <div class="container">
     <div class="center">
         <button class="backButton" type="button" onClick="history.back()">Go back to the last page</button>

@@ -48,7 +48,7 @@
 
 
 
-        <!-- <a> <img src="../img/me.jpg" alt="Eline Broier" width="145" height="175"> </a> -->
+
 
 
 </head>
