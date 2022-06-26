@@ -25,7 +25,6 @@
 
 <body class="body500">
 
-<img src="{{url('../img/500error.jpg')}}">
 <div class="container">
     <div class="center">
         <button class="backButton" type="button" onClick="history.back()">Go back to the last page</button>

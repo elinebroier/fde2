@@ -205,7 +205,7 @@ li.dropdown {
 
     .body404 {
         /*background-image: url('img/404error.jpg');*/
-        background-image: url("../img/404error.jpg");
+        background-image: url('../img/404error.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 100%;
@@ -213,7 +213,7 @@ li.dropdown {
 
     .body500 {
         /*background-image: url('img/404error.jpg');*/
-        background-image: url("../img/500error.jpg");
+        background-image: url('../img/500error.jpg');
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: 100% 100%;
