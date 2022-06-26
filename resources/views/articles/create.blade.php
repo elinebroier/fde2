@@ -10,7 +10,6 @@
 
             <form method='POST' action="/articles">
                 <input type="hidden" name="_token" value="{{ csrf_token() }}" />
-
                 <div class='field'>
                     <p class='title is-4 star' for='title' data-end=" *">Title</p>
 
