@@ -7,7 +7,7 @@
     <link rel="stylesheet" type='text/css' href="../css/main.css">
 
     <ul class="nav">
-        <li class="nav"><a href="/welcome">Home</a></li>
+        <li class="nav"><a href="/">Home</a></li>
         <li class="nav"><a href="/hbo">HBO</a></li>
         <li class="dropdown">
             <a href="/profile" class="dropbt">Profile</a>
@@ -23,10 +23,19 @@
     </ul>
 </head>
 
-<body>
-<div class="error" id="500">
-    <h1><b style="color: red">404: </b>could not find this page</h1>
+<body class="body404">
+
+<div class="container">
+    <div class="center">
+        <button class="backButton" type="button" onClick="history.back()">Go back to the last page</button>
+    </div>
 </div>
+
+{{--<img src="img/404error.jpg" alt="background">--}}
+{{--<div class="error" >--}}
+{{--    <h1><b style="color: red">404: </b>could not find this page</h1>--}}
+{{--</div>--}}
+
 </body>
 </html>
 

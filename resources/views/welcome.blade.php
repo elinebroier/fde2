@@ -7,7 +7,7 @@
     <link rel="stylesheet" type='text/css' href="css/foto.css">
 
     <ul class="nav">
-        <li class="nav"><a href="#">Dashboard</a></li>
+        <li class="nav"><a href="#">Home</a></li>
         <li class="nav"><a href="/hbo">HBO</a></li>
         <li class="dropdown">
             <a href="/profile" class="dropbt">Profile</a>
@@ -15,7 +15,7 @@
                 <a href="/photos">Photo's</a>
             </div>
         </li>
-        <li class="nav"><a href="/dashboard">Dashboard</a></li>
+        <li class="nav"><a href="/grades">Dashboard</a></li>
         <li class="nav"><a href="/motivation">Motivation</a></li>
         <li class="nav"><a href="/profession">Profession</a></li>
         <li class="nav"><a href="/articles">Articles</a></li>

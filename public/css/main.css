@@ -203,3 +203,37 @@ li.dropdown {
         padding-top:150px;
     }
 
+    .body404 {
+        /*background-image: url('img/404error.jpg');*/
+        background-image: url("../img/404error.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    .body500 {
+        /*background-image: url('img/404error.jpg');*/
+        background-image: url("../img/500error.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+
+    .backButton {
+        border: none;
+        text-color: white;
+        background-color: rgb(244,214,224);
+        padding: 10px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .center {
+        margin-top: 30%;
+        margin-left: 40%;
+    }
