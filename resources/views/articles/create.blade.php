@@ -6,6 +6,8 @@
         <div id='page' class='container'>
             <section class="section"></section>
             <h1 class='has-text-weight-bold is-size-4'>New Article</h1>
+            <br>
+            <p class="star" data-end=" *">It's required to fill in all fields with </p>
             <section class="section"></section>
 
             <form method='POST' action="/articles">
