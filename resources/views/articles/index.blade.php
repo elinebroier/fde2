@@ -5,7 +5,7 @@
     <section class="section">
         <div class="container" id='page'>
             <div class="">
-                <a class="button is-focused" href="/articles/create">Create New</a>
+                <a class="button is-focused" href="/articles/create">Create New Article</a>
             </div>
 
         </div>
